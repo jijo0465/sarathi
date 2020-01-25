@@ -69,8 +69,8 @@ class _SignalsPageState extends State<SignalsPage>
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     if(language != widget.language){
-      print("entered");
       loadFile();
     }
       

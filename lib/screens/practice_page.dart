@@ -490,7 +490,7 @@ class _PracticePageState extends State<PracticePage> {
     if (Exam().answeredQuestions.length > 0 &&
         Exam().answeredQuestions.length % 10 == 0) {
           isRewarded = false;
-          await RewardedVideoAd.instance.show().catchError((e) => print(e));
+          await RewardedVideoAd.instance.show().catchError((e) => isRewarded = true);
       
     }
     if (isRewarded) {

@@ -1,10 +1,8 @@
 import 'dart:ui';
-import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:riders/components/rate_card.dart';
 import 'package:share/share.dart';
 import 'package:launch_review/launch_review.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class InfoPage extends StatefulWidget {
   final String currentLanguage;
@@ -40,22 +38,40 @@ class _InfoPageState extends State<InfoPage> {
                     fit: BoxFit.fill)),
           ),
           Container(
-              padding: EdgeInsets.all(8),
+              padding: EdgeInsets.all(12),
               child: Text(
-                'This app is developed by siphlo ©',
+                'This app contains more than 200 questions and answers in multiple languages. All the questions are extracted from the Sarathi exam center(Ministry of Road Transport & Highways) which will help to get the drivers license in the first attempt.',
                 textWidthBasis: TextWidthBasis.parent,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 16,
                 ),
               )),
+          GestureDetector(
+            onTap: () => Scaffold.of(context).showSnackBar(SnackBar(
+                content: Text('Feature Coming soon!'),
+                action: SnackBarAction(
+                  label: 'Ok',
+                  onPressed: () {},
+                ))),
+            child: Container(
+              margin: EdgeInsets.only(left: 4, right: 4),
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * 0.17,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                  image: DecorationImage(
+                      image: AssetImage("assets/vip_user.png"),
+                      fit: BoxFit.fill)),
+            ),
+          ),
           SizedBox(
-            height: 20,
+            height: 8,
           ),
           Row(
             children: <Widget>[
-              SizedBox(
-                width: 4,
-              ),
+              // SizedBox(
+              //   width: 4,
+              // ),
               Expanded(
                 child: GestureDetector(
                   onTap: () {
@@ -81,9 +97,9 @@ class _InfoPageState extends State<InfoPage> {
                   ),
                 ),
               ),
-              SizedBox(
-                width: 4,
-              ),
+              // SizedBox(
+              //   width: 4,
+              // ),
             ],
           ),
           Expanded(
@@ -102,11 +118,4 @@ class _InfoPageState extends State<InfoPage> {
     );
   }
 
-  void _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
 }

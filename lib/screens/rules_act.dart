@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:riders/components/pdf_link.dart';
+import 'package:riders/components/size_transition.dart';
 import 'package:riders/screens/rules_pdf.dart';
 
 class RulesAct extends StatelessWidget {
@@ -89,23 +90,26 @@ class RulesAct extends StatelessWidget {
   }
 
   Future<File> getFileFromAsset(String asset) async {
+    File assetFile;
     try {
       var data = await rootBundle.load('assets/pdf/$asset');
       var bytes = data.buffer.asUint8List();
       var dir = await getApplicationDocumentsDirectory();
       File file = File('${dir.path}/$asset.pdf');
-      File assetFile = await file.writeAsBytes(bytes);
-      return assetFile;
+      assetFile = await file.writeAsBytes(bytes);
+      
     } catch (e) {
       print('ERROR');
     }
+    return assetFile;
   }
 
   void openPdf(String name, BuildContext context) {
     getFileFromAsset('$name.pdf').then((file) {
       String path = file.path;
-      Navigator.of(context).push(MaterialPageRoute(
-          builder: (BuildContext context) => RulesPdf(path: path)));
+      Navigator.push(context, SizeRoute(page: RulesPdf(path: path)));
+      // Navigator.of(context).push(MaterialPageRoute(
+      //     builder: (BuildContext context) => RulesPdf(path: path)));
     });
   }
 }

@@ -43,6 +43,7 @@ class _QuestionCardsState extends State<QuestionCards>
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Container(
       child: ClipRRect(
         borderRadius: BorderRadius.all(Radius.circular(20)),

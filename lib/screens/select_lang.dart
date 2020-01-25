@@ -24,7 +24,7 @@ class _SelectLangState extends State<SelectLang> {
   @override
   Widget build(BuildContext context) {
     return BackdropFilter(
-      filter: ImageFilter.blur(sigmaX: 8,sigmaY: 8),
+      filter: ImageFilter.blur(sigmaX: 22,sigmaY: 22),
       child: Container(
         height: MediaQuery.of(context).size.height * 0.4,
         width: MediaQuery.of(context).size.width,

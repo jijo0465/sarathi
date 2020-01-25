@@ -24,11 +24,11 @@ class RateCard extends StatelessWidget {
                 height: 40,
                 width: 40,
                 child: type == 'rate'?FlareActor(
-                  'assets/rating.flr',
+                  'assets/rating2.flr',
                   animation: 'Star',
                   fit: BoxFit.fitHeight,
                 ):FlareActor(
-                  'assets/share.flr',
+                  'assets/share2.flr',
                   animation: 'Share',
                   fit: BoxFit.fitHeight,
                 ),

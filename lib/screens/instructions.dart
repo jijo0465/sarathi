@@ -38,6 +38,7 @@ class _InstructionsState extends State<Instructions>
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return PageView(
       controller: widget.trackPageController,
       onPageChanged: (value) {

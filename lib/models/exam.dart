@@ -1,5 +1,4 @@
 import 'package:riders/models/answered_questions.dart';
-import 'package:riders/models/question.dart';
 
 class Exam {
   int currentQuestion;

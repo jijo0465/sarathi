@@ -56,6 +56,7 @@ class _PracticeQuestionState extends State<PracticeQuestion>
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Container(
       constraints:
           BoxConstraints(minHeight: MediaQuery.of(context).size.height * 0.41),

@@ -27,9 +27,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     String title;
-    switch(navSelected){
+    switch (navSelected) {
       case 1:
-        title = "Sarathi - Learners app";
+        title = "Sarathi";
         break;
       case 2:
         title = 'Signals';
@@ -45,24 +45,32 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
     }
     return Scaffold(
-        appBar: navSelected == 5?null:AppBar(
-          backgroundColor: Colors.deepPurple.withOpacity(0.8),
-          elevation: 0,
-          title: Text(title,style: TextStyle(
-            fontSize: navSelected == 1 ? 22:18,
-            fontFamily: ''
-          ),),
-          actions:  <Widget>[
-            navSelected == 4?Container():IconButton(
-              icon: Icon(Icons.language),
-              onPressed: () {
-                setState(() {
-                  selectLang = true;
-                });
-              },
-            ),
-          ],
-        ),
+        appBar: navSelected == 5
+            ? null
+            : AppBar(
+                backgroundColor: Colors.deepPurple.withOpacity(0.8),
+                elevation: 0,
+                centerTitle: navSelected == 1? true:false,
+                title: Text(title,
+                    style: navSelected == 1
+                        ? TextStyle(
+                           letterSpacing: 1,
+                            fontSize: 29,
+                            fontFamily: 'Lobster')
+                        : TextStyle(fontSize: 18)),
+                actions: <Widget>[
+                  navSelected == 4
+                      ? Container()
+                      : IconButton(
+                          icon: Icon(Icons.language),
+                          onPressed: () {
+                            setState(() {
+                              selectLang = true;
+                            });
+                          },
+                        ),
+                ],
+              ),
         body: WillPopScope(
           child: Container(
             child: Stack(
