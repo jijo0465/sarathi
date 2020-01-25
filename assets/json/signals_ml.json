@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "image": "signal/img1.png",
+        "description": "നിർത്തുക",
+        "classification": 1
+    },
+    {
+        "id": 2,
+        "image": "signal/img10.png",
+        "description": "ഇടുങ്ങിയ പാലം",
+        "classification": 2
+    },
+    {
+        "id": 3,
+        "image": "signal/img108.png",
+        "description": "ഭക്ഷണശാല",
+        "classification": 3
+    },
+    {
+        "id": 4,
+        "image": "signal/img11.png",
+        "description": "സ്പീഡ് നിയന്ത്രണം അവസാനിച്ചു",
+        "classification": 1
+    },
+    {
+        "id": 5,
+        "image": "signal/img110.png",
+        "description": "വാഹനത്തിനു മുന്നോട്ടു പോകാവുന്നതാണ്.",
+        "classification": 4
+    },
+    {
+        "id": 6,
+        "image": "signal/img111.png",
+        "description": "വാഹനം നിർത്തിയിട്ടു കാത്തുനിൽക്കുക",
+        "classification": 4
+    },
+    {
+        "id": 7,
+        "image": "signal/img12.png",
+        "description": "ഇടുങ്ങിയ റോഡ് മുൻപിൽ",
+        "classification": 2
+    },
+    {
+        "id": 8,
+        "image": "signal/img124.png",
+        "description": "ഇടുങ്ങിയ പാലം മുൻപിൽ",
+        "classification": 2
+    },
+    {
+        "id": 9,
+        "image": "signal/img125.png",
+        "description": "മെയിൻ റോഡ് മുന്നിൽ",
+        "classification": 2
+    },
+    {
+        "id": 10,
+        "image": "signal/img13.png",
+        "description": "കാവലുള്ള റെയിൽ ഗേറ്റ്",
+        "classification": 2
+    },
+    {
+        "id": 11,
+        "image": "signal/img138.png",
+        "description": "പോകുവാൻ തയാറാവുക.",
+        "classification": 4
+    },
+    {
+        "id": 12,
+        "image": "signal/img14.png",
+        "description": "ഓവർ ടേക്ക് നിരോധിച്ചിരിക്കുന്നു",
+        "classification": 1
+    },
+    {
+        "id": 13,
+        "image": "signal/img15.png",
+        "description": "ക്രോസ് റോഡ്",
+        "classification": 2
+    },
+    {
+        "id": 14,
+        "image": "signal/img152.png",
+        "description": "ഒരു വശത്ത് നിന്നുള്ള വാഹനങ്ങളെ കടത്തിവിടുക.",
+        "classification": 4
+    },
+    {
+        "id": 15,
+        "image": "signal/img153.png",
+        "description": "ഇടതു നിന്നും വലതു നിന്നുള്ള വാഹനങ്ങളെ നിർത്തുക.",
+        "classification": 4
+    },
+    {
+        "id": 16,
+        "image": "signal/img154.png",
+        "description": "ഇടതു നിന്നുള്ള വാഹനങ്ങളെ കടത്തിവിടുക.",
+        "classification": 4
+    },
+    {
+        "id": 17,
+        "image": "signal/img155.png",
+        "description": "വലതു നിന്നുള്ള വാഹനങ്ങളെ കടത്തിവിടുക.",
+        "classification": 4
+    },
+    {
+        "id": 18,
+        "image": "signal/img156.png",
+        "description": "ചിഹ്നം മാറ്റാൻ",
+        "classification": 4
+    },
+    {
+        "id": 19,
+        "image": "signal/img157.png",
+        "description": "ഒരു വശത്ത് നിന്നുള്ള വാഹനങ്ങളെ കടത്തിവിടുക",
+        "classification": 4
+    },
+    {
+        "id": 20,
+        "image": "signal/img158.png",
+        "description": "ടി പോയിൻറിൽ നിന്നുള്ള വാഹനങ്ങളെ കടത്തിവിടുക.",
+        "classification": 4
+    },
+    {
+        "id": 21,
+        "image": "signal/img159.png",
+        "description": "വി ഐ പി സല്യൂട്ട്.",
+        "classification": 4
+    },
+    {
+        "id": 22,
+        "image": "signal/img16.png",
+        "description": "ഇടത്തോട്ടോ മുമ്പോട്ടൊ മാത്രം പോകാം",
+        "classification": 1
+    },
+    {
+        "id": 23,
+        "image": "signal/img160.png",
+        "description": "ടി പോയിൻറിൽ നിന്നുള്ള വാഹനങ്ങളെ നിയന്ത്രിക്കുക.",
+        "classification": 4
+    },
+    {
+        "id": 24,
+        "image": "signal/img17.png",
+        "description": "ഹോൺ മുഴക്കുക",
+        "classification": 1
+    },
+    {
+        "id": 25,
+        "image": "signal/img18.png",
+        "description": "വലത്തോട്ട് സൈഡ് റോഡ്",
+        "classification": 2
+    },
+    {
+        "id": 26,
+        "image": "signal/img19.png",
+        "description": "നിർത്തുവാനോ സ്റ്റാൻഡിംഗോ പാടില്ല",
+        "classification": 1
+    },
+    {
+        "id": 27,
+        "image": "signal/img2.png",
+        "description": "ഇടത്തോട്ടു ചേർന്ന് മാത്രം സഞ്ചരിക്കുക",
+        "classification": 1
+    },
+    {
+        "id": 28,
+        "image": "signal/img20.png",
+        "description": "മുമ്പോട്ട് മാത്രം",
+        "classification": 1
+    },
+    {
+        "id": 29,
+        "image": "signal/img21.png",
+        "description": "മോട്ടോർ വാഹനങ്ങൾക്ക് വഴി ഇല്ല",
+        "classification": 1
+    },
+    {
+        "id": 30,
+        "image": "signal/img23.png",
+        "description": "കാളവണ്ടി നിരോധിച്ചിരിക്കുന്നു",
+        "classification": 1
+    },
+    {
+        "id": 31,
+        "image": "signal/img24.png",
+        "description": "കാൽ നടക്കാരുടെ ക്രോസിംഗ് പാടില്ല",
+        "classification": 1
+    },
+    {
+        "id": 32,
+        "image": "signal/img25.png",
+        "description": "ഇടത്തോട്ടു തിരിയുക നിരോധിച്ചിരിക്കുന്നു",
+        "classification": 1
+    },
+    {
+        "id": 33,
+        "image": "signal/img26.png",
+        "description": "50 കി.മീ. മണിക്കൂർ സ്പീഡിൽ കൂടാതെ പോകുക",
+        "classification": 1
+    },
+    {
+        "id": 34,
+        "image": "signal/img27.png",
+        "description": "വലത്തോട്ടോ മുന്നോട്ടോ മാത്രം പോകുക",
+        "classification": 1
+    },
+    {
+        "id": 35,
+        "image": "signal/img29.png",
+        "description": "ഇടത്തോട്ടു വളവ്",
+        "classification": 2
+    },
+    {
+        "id": 36,
+        "image": "signal/img3.png",
+        "description": "വഴി കൊടുക്കുക",
+        "classification": 1
+    },
+    {
+        "id": 37,
+        "image": "signal/img30.png",
+        "description": "വലത്തോട്ട് ഹെയർ പിൻ വളവ്",
+        "classification": 2
+    },
+    {
+        "id": 38,
+        "image": "signal/img31.png",
+        "description": "ഇടത്തോട്ടു ഹെയർ പിൻ വളവ്",
+        "classification": 2
+    },
+    {
+        "id": 39,
+        "image": "signal/img32.png",
+        "description": "വലത് റിവേഴ്സ് വളവ്",
+        "classification": 2
+    },
+    {
+        "id": 40,
+        "image": "signal/img33.png",
+        "description": "ഇടത് റിവേഴ്സ് വളവ്",
+        "classification": 2
+    },
+    {
+        "id": 41,
+        "image": "signal/img34.png",
+        "description": "Y കവല",
+        "classification": 2
+    },
+    {
+        "id": 42,
+        "image": "signal/img37.png",
+        "description": "ചുറ്റി കറങ്ങി പോകുക",
+        "classification": 2
+    },
+    {
+        "id": 43,
+        "image": "signal/img38.png",
+        "description": "അപകടകരമായ താഴ്ച്",
+        "classification": 2
+    },
+    {
+        "id": 44,
+        "image": "signal/img39.png",
+        "description": "വലത്തോട്ട് Y ആകൃതിയിൽ വിഭജനം",
+        "classification": 2
+    },
+    {
+        "id": 45,
+        "image": "signal/img4.png",
+        "description": "നോ എൻട്രി",
+        "classification": 1
+    },
+    {
+        "id": 46,
+        "image": "signal/img40.png",
+        "description": "ഇടത്തോട്ട് Y ആകൃതിയിൽ വിഭജനം",
+        "classification": 2
+    },
+    {
+        "id": 47,
+        "image": "signal/img41.png",
+        "description": "വഴുതലുള്ള റോഡ്",
+        "classification": 2
+    },
+    {
+        "id": 48,
+        "image": "signal/img42.png",
+        "description": "ചരൽ റോഡ്",
+        "classification": 2
+    },
+    {
+        "id": 49,
+        "image": "signal/img43.png",
+        "description": "സൈക്കിൾ ക്രോസിംഗ്",
+        "classification": 2
+    },
+    {
+        "id": 50,
+        "image": "signal/img44.png",
+        "description": "കന്നുകാലികൾ വഴിയിൽ വന്നേക്കാം",
+        "classification": 2
+    },
+    {
+        "id": 51,
+        "image": "signal/img45.png",
+        "description": "സ്കൂൾ അടുത്ത്",
+        "classification": 2
+    },
+    {
+        "id": 52,
+        "image": "signal/img46.png",
+        "description": "റോഡിൽ പണി നടക്കുന്നു",
+        "classification": 2
+    },
+    {
+        "id": 53,
+        "image": "signal/img47.png",
+        "description": "പാറ വീഴുന്ന ഇടം",
+        "classification": 2
+    },
+    {
+        "id": 54,
+        "image": "signal/img49.png",
+        "description": "കുത്തനെ ഉള്ള കയറ്റം",
+        "classification": 2
+    },
+    {
+        "id": 55,
+        "image": "signal/img5.png",
+        "description": "വലത്തോട്ട് വളവ്",
+        "classification": 2
+    },
+    {
+        "id": 56,
+        "image": "signal/img50.png",
+        "description": "കുത്തനെ ഉള്ള ഇറക്കം",
+        "classification": 2
+    },
+    {
+        "id": 57,
+        "image": "signal/img51.png",
+        "description": "റോഡിൻറെ വീതി കൂടുന്നു.",
+        "classification": 2
+    },
+    {
+        "id": 58,
+        "image": "signal/img52.png",
+        "description": "മീടിയനിൽ വിടവുണ്ട്",
+        "classification": 2
+    },
+    {
+        "id": 59,
+        "image": "signal/img53.png",
+        "description": "ഹമ്പ് റോഡ്",
+        "classification": 2
+    },
+    {
+        "id": 60,
+        "image": "signal/img54.png",
+        "description": "മുന്നിൽ തടസമുണ്ട്",
+        "classification": 2
+    },
+    {
+        "id": 61,
+        "image": "signal/img55.png",
+        "description": "സൈഡ് റോഡ് തടസം",
+        "classification": 3
+    },
+    {
+        "id": 62,
+        "image": "signal/img56.png",
+        "description": "കടത്ത് മുന്നിൽ ഉണ്ട്",
+        "classification": 2
+    },
+    {
+        "id": 63,
+        "image": "signal/img57.png",
+        "description": "പാർക്കിംഗ് ഇരുവശത്തും",
+        "classification": 3
+    },
+    {
+        "id": 64,
+        "image": "signal/img58.png",
+        "description": "മോട്ടോർ സൈക്കിൾ പാർക്കിംഗ്",
+        "classification": 3
+    },
+    {
+        "id": 65,
+        "image": "signal/img6.png",
+        "description": "കാൽ നടക്കാരുടെ ക്രോസിംഗ്",
+        "classification": 2
+    },
+    {
+        "id": 66,
+        "image": "signal/img63.png",
+        "description": "വലത്തോട്ട് തിരിയാൻ.",
+        "classification": 4
+    },
+    {
+        "id": 67,
+        "image": "signal/img64.png",
+        "description": "ഇടത്തോട്ട് തിരിയാൻ പോകുന്നു",
+        "classification": 4
+    },
+    {
+        "id": 68,
+        "image": "signal/img65.png",
+        "description": "വാഹന വേഗത കുറക്കാൻ പോകുന്നു.",
+        "classification": 4
+    },
+    {
+        "id": 69,
+        "image": "signal/img66.png",
+        "description": "വാഹനം നിർത്താൻ പോകുന്നു",
+        "classification": 4
+    },
+    {
+        "id": 70,
+        "image": "signal/img67.png",
+        "description": "പുറകിൽ വരുന്ന വാഹനത്തിനെ ഓവർടേക്ക് ചെയ്യാൻ അനുവതിക്കുക",
+        "classification": 4
+    },
+    {
+        "id": 71,
+        "image": "signal/img69.png",
+        "description": "പാർക്കിംഗ് പാടില്ല",
+        "classification": 1
+    },
+    {
+        "id": 72,
+        "image": "signal/img7.png",
+        "description": "വലതു വശം പാർക്കിംഗ് അനുവദിച്ചിരിക്കുന്നു",
+        "classification": 3
+    },
+    {
+        "id": 73,
+        "image": "signal/img70.png",
+        "description": "ഇടത്തോട്ടു മാത്രം തിരിയുക",
+        "classification": 1
+    },
+    {
+        "id": 74,
+        "image": "signal/img71.png",
+        "description": "ആശുപത്രി",
+        "classification": 3
+    },
+    {
+        "id": 75,
+        "image": "signal/img72.png",
+        "description": "വലത്തോട്ട് തിരിയാൻ പാടില്ല",
+        "classification": 1
+    },
+    {
+        "id": 76,
+        "image": "signal/img73.png",
+        "description": "വലത്തോട്ട് മാത്രം തിരിയുക",
+        "classification": 1
+    },
+    {
+        "id": 77,
+        "image": "signal/img74.png",
+        "description": "ഇരു ദിശയിലും വാഹനങ്ങൾ നിരോധിച്ചിരിക്കുന്നു",
+        "classification": 1
+    },
+    {
+        "id": 78,
+        "image": "signal/img75.png",
+        "description": "ഇടത്തോട്ടു സൈഡ് റോഡ്",
+        "classification": 2
+    },
+    {
+        "id": 79,
+        "image": "signal/img76.png",
+        "description": "ശാഖാ റോഡുകൾ വലതുവശം - ഇടതുവശം",
+        "classification": 2
+    },
+    {
+        "id": 80,
+        "image": "signal/img79.png",
+        "description": "വിശ്രമ കേന്ദ്രം",
+        "classification": 3
+    },
+    {
+        "id": 81,
+        "image": "signal/img8.png",
+        "description": "യു ടേൺ പാടില്ല",
+        "classification": 1
+    },
+    {
+        "id": 82,
+        "image": "signal/img80.png",
+        "description": "വഴി തടസം",
+        "classification": 3
+    },
+    {
+        "id": 83,
+        "image": "signal/img81.png",
+        "description": "വൺ വേ",
+        "classification": 1
+    },
+    {
+        "id": 84,
+        "image": "signal/img83.png",
+        "description": "ഫസ്റ്റ് എയിഡ് പോസ്റ്റ്",
+        "classification": 3
+    },
+    {
+        "id": 85,
+        "image": "signal/img85.png",
+        "description": "വലത്തോട്ട് പോവുക",
+        "classification": 1
+    },
+    {
+        "id": 86,
+        "image": "signal/img86.png",
+        "description": "പ്രവേശനം എതിർ ദിശയിലെ വാഹനങ്ങൾക്ക് മാത്രം",
+        "classification": 1
+    },
+    {
+        "id": 87,
+        "image": "signal/img87.png",
+        "description": "2 മീറ്റർ മുകളിൽ വീതി ഉള്ള വാഹനങ്ങൾ നിരോധിച്ചിരിക്കുന്നു",
+        "classification": 1
+    },
+    {
+        "id": 88,
+        "image": "signal/img88.png",
+        "description": "3.5 മീറ്റർ മുകളിൽ പൊക്കം ഉള്ള വാഹനങ്ങൾ നിരോധിച്ചിരിക്കുന്നു",
+        "classification": 1
+    },
+    {
+        "id": 89,
+        "image": "signal/img9.png",
+        "description": "ഹോൺ നിരോധിച്ചിരിക്കുന്നു",
+        "classification": 1
+    },
+    {
+        "id": 90,
+        "image": "signal/img90.png",
+        "description": "T ജംഗ്ഷൻ",
+        "classification": 2
+    },
+    {
+        "id": 91,
+        "image": "signal/img91.png",
+        "description": "പിൻവശത്ത് നിന്നുള്ള വാഹനങ്ങളെ നിർത്തുക.",
+        "classification": 4
+    },
+    {
+        "id": 92,
+        "image": "signal/img92.png",
+        "description": "മുന്നില് നിന്നും പിന്നിൽ നിന്നുമുള്ള വാഹനങ്ങൾ നിർത്തുക",
+        "classification": 4
+    },
+    {
+        "id": 93,
+        "image": "signal/img93.png",
+        "description": "മുന്നില് നിന്നും വരുന്ന വാഹനങ്ങൾ നിർത്തുക",
+        "classification": 4
+    },
+    {
+        "id": 94,
+        "image": "signal/img98.png",
+        "description": "സൈക്കിൾ ട്രാക്ക്",
+        "classification": 1
+    },
+    {
+        "id": 95,
+        "image": "signal/img99.png",
+        "description": "ഭാരപരിധി 5 ടൺ",
+        "classification": 1
+    },
+    {
+        "id": 96,
+        "image": "signal/img202.png",
+        "description": "ട്രക്ക് നിരോധിച്ചിരിക്കുന്നു",
+        "classification": 1
+    },
+    {
+        "id": 97,
+        "image": "signal/img203.png",
+        "description": "ആക്സിൽ ഭാര പരിധി",
+        "classification": 1
+    },
+    {
+        "id": 98,
+        "image": "signal/img204.png",
+        "description": "കാവൽ ഇല്ലാത്ത റെയിൽവേ ക്രോസിംഗ് ",
+        "classification": 2
+    },
+    {
+        "id": 99,
+        "image": "signal/img206.png",
+        "description": "ഓട്ടോറിക്ഷ സ്റ്റാൻഡ്",
+        "classification": 3
+    },
+    {
+        "id": 100,
+        "image": "signal/img207.png",
+        "description": "ടാക്സി സ്റ്റാൻഡ് ",
+        "classification": 3
+    }
+]

@@ -1,0 +1,65 @@
+name: riders
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.5.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  flare_flutter: ^1.8.1
+  flutter_icons: ^1.0.0+1
+  shifting_tabbar: ^0.3.1
+  flutter_full_pdf_viewer: ^1.0.6
+  path_provider: ^1.5.1
+  provider: ^3.2.0
+  url_launcher: ^5.4.1
+  flare_splash_screen: ^3.0.0
+  flutter_launcher_icons: ^0.7.4
+  share: ^0.6.3+3
+  launch_review: ^2.0.0
+  firebase_admob: ^0.9.0+10
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+      - assets/riders.jpg
+      - assets/Teddy.flr
+      - assets/eight.flr
+      - assets/h.flr
+      - assets/malayalam.png
+      - assets/english.png
+      - assets/signal/
+      - assets/pdf/
+      - assets/json/
+      - assets/background/
+      - assets/riders_logo.png
+      - assets/riders_wall1.png
+      - assets/riders_wall2.png
+      - assets/splash.flr
+      - assets/icon.png
+      - assets/icon_background.png
+      - assets/icon_foreground.png
+      - assets/icon_foreground_alt.png
+      - assets/h_alt.flr
+      - assets/share.png
+      - assets/rate.png
+      - assets/hindi.png
+      - assets/sarathi_logo.png
+      - assets/sarathi_cover.png
+      - assets/share.flr
+      - assets/rating.flr
+      
+flutter_icons:
+  android: "launcher_icon" 
+  ios: true
+  image_path: "assets/sarathi_logo.png"

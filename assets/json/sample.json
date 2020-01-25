@@ -1,0 +1,58 @@
+{
+    "customer": [
+        {
+            "customerprofile__inv_addr": "xasasdasd",
+            "customerprofile__pro_addr": "asdsadas",
+            "customerprofile__email": "akshay@gmail.com",
+            "customerprofile__con_per": "dsadass",
+            "customerprofile__phone": "dsadas",
+            "name": "Mear Enterprices"
+        }
+    ],
+    "quo_details": 
+        {
+            "customer": 5,
+            "lpo": "12345678",
+            "total": "166.000",
+            "vat": "7.25",
+            "net": "152.25",
+            "terms": "details will be updated",
+            "created_date": "2020-01-19T11:00:50.753Z"
+        }
+    ,
+    "quo_items": [
+        {
+            "id": 1,
+            "quo_no": "1156",
+            "inventory__item_code": "apple",
+            "inventory__description": "green apple",
+            "uom": "packets",
+            "inventory__price": "22",
+            "quantity": "2",
+            "vat": "1.10",
+            "total": "44.000"
+        },
+        {
+            "id": 3,
+            "quo_no": "1156",
+            "inventory__item_code": "orange",
+            "inventory__description": "red orange",
+            "uom": "packets",
+            "inventory__price": "43",
+            "quantity": "2",
+            "vat": "2.15",
+            "total": "86.000"
+        },
+        {
+            "id": 4,
+            "quo_no": "1156",
+            "inventory__item_code": "apple",
+            "inventory__description": "green apple",
+            "uom": "packets",
+            "inventory__price": "12",
+            "quantity": "2",
+            "vat": "0.60",
+            "total": "24.000"
+        }
+    ]
+}

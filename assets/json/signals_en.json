@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "image": "signal/img1.png",
+        "description": "Stop ",
+        "classification": 1
+    },
+    {
+        "id": 2,
+        "image": "signal/img10.png",
+        "description": "Narrow bridge",
+        "classification": 2
+    },
+    {
+        "id": 3,
+        "image": "signal/img108.png",
+        "description": "Restaurant",
+        "classification": 3
+    },
+    {
+        "id": 4,
+        "image": "signal/img11.png",
+        "description": "End of speed restriction",
+        "classification": 1
+    },
+    {
+        "id": 5,
+        "image": "signal/img110.png",
+        "description": "Go on",
+        "classification": 4
+    },
+    {
+        "id": 6,
+        "image": "signal/img111.png",
+        "description": "Stop and Wait",
+        "classification": 4
+    },
+    {
+        "id": 7,
+        "image": "signal/img12.png",
+        "description": "Narrow road ahead",
+        "classification": 2
+    },
+    {
+        "id": 8,
+        "image": "signal/img124.png",
+        "description": "Narrow bridge ahead ",
+        "classification": 2
+    },
+    {
+        "id": 9,
+        "image": "signal/img125.png",
+        "description": "Major Road ahead",
+        "classification": 2
+    },
+    {
+        "id": 10,
+        "image": "signal/img13.png",
+        "description": "Guarded railway crossing",
+        "classification": 2
+    },
+    {
+        "id": 11,
+        "image": "signal/img138.png",
+        "description": "Get Ready",
+        "classification": 4
+    },
+    {
+        "id": 12,
+        "image": "signal/img14.png",
+        "description": "Overtaking prohibited",
+        "classification": 1
+    },
+    {
+        "id": 13,
+        "image": "signal/img15.png",
+        "description": "Cross road",
+        "classification": 2
+    },
+    {
+        "id": 14,
+        "image": "signal/img152.png",
+        "description": "To start one sided vehicles",
+        "classification": 4
+    },
+    {
+        "id": 15,
+        "image": "signal/img153.png",
+        "description": "To stop vehicles approaching simultaneously from right and left",
+        "classification": 4
+    },
+    {
+        "id": 16,
+        "image": "signal/img154.png",
+        "description": "To start vehicle approaching from left",
+        "classification": 4
+    },
+    {
+        "id": 17,
+        "image": "signal/img155.png",
+        "description": "To start vehicles coming from right",
+        "classification": 4
+    },
+    {
+        "id": 18,
+        "image": "signal/img156.png",
+        "description": "To change sign",
+        "classification": 4
+    },
+    {
+        "id": 19,
+        "image": "signal/img157.png",
+        "description": "To start one sided vehicles",
+        "classification": 4
+    },
+    {
+        "id": 20,
+        "image": "signal/img158.png",
+        "description": "To start vehicles on T-Point",
+        "classification": 4
+    },
+    {
+        "id": 21,
+        "image": "signal/img159.png",
+        "description": "To give VIP salute",
+        "classification": 4
+    },
+    {
+        "id": 22,
+        "image": "signal/img16.png",
+        "description": "Compulsory ahead or turn left",
+        "classification": 1
+    },
+    {
+        "id": 23,
+        "image": "signal/img160.png",
+        "description": "To manage vehicles on T-Point",
+        "classification": 4
+    },
+    {
+        "id": 24,
+        "image": "signal/img17.png",
+        "description": "Compulsory Sound horn",
+        "classification": 1
+    },
+    {
+        "id": 25,
+        "image": "signal/img18.png",
+        "description": "Side road right",
+        "classification": 2
+    },
+    {
+        "id": 26,
+        "image": "signal/img19.png",
+        "description": "No Stopping or standing",
+        "classification": 1
+    },
+    {
+        "id": 27,
+        "image": "signal/img2.png",
+        "description": "Compulsory keep left ",
+        "classification": 1
+    },
+    {
+        "id": 28,
+        "image": "signal/img20.png",
+        "description": "Ahead only ",
+        "classification": 1
+    },
+    {
+        "id": 29,
+        "image": "signal/img21.png",
+        "description": "No entry for motor vehicles",
+        "classification": 1
+    },
+    {
+        "id": 30,
+        "image": "signal/img23.png",
+        "description": "Bullock cart prohibited",
+        "classification": 1
+    },
+    {
+        "id": 31,
+        "image": "signal/img24.png",
+        "description": "Pedestrians prohibited",
+        "classification": 1
+    },
+    {
+        "id": 32,
+        "image": "signal/img25.png",
+        "description": "Left turn prohibited",
+        "classification": 1
+    },
+    {
+        "id": 33,
+        "image": "signal/img26.png",
+        "description": "Drive the vehicle not exceeding 50 km/hr",
+        "classification": 1
+    },
+    {
+        "id": 34,
+        "image": "signal/img27.png",
+        "description": "Compulsory go ahead or turn to right",
+        "classification": 1
+    },
+    {
+        "id": 35,
+        "image": "signal/img29.png",
+        "description": "Left hand curve",
+        "classification": 2
+    },
+    {
+        "id": 36,
+        "image": "signal/img3.png",
+        "description": "Give way",
+        "classification": 1
+    },
+    {
+        "id": 37,
+        "image": "signal/img30.png",
+        "description": "Right hair pin bend",
+        "classification": 2
+    },
+    {
+        "id": 38,
+        "image": "signal/img31.png",
+        "description": "Left hair pin bend",
+        "classification": 2
+    },
+    {
+        "id": 39,
+        "image": "signal/img32.png",
+        "description": "Right reverse bend",
+        "classification": 2
+    },
+    {
+        "id": 40,
+        "image": "signal/img33.png",
+        "description": "Left reverse bend",
+        "classification": 2
+    },
+    {
+        "id": 41,
+        "image": "signal/img34.png",
+        "description": "Y-inter section",
+        "classification": 2
+    },
+    {
+        "id": 42,
+        "image": "signal/img37.png",
+        "description": "Round about",
+        "classification": 2
+    },
+    {
+        "id": 43,
+        "image": "signal/img38.png",
+        "description": "Dangerous dip",
+        "classification": 2
+    },
+    {
+        "id": 44,
+        "image": "signal/img39.png",
+        "description": "Y-inter section right",
+        "classification": 2
+    },
+    {
+        "id": 45,
+        "image": "signal/img4.png",
+        "description": "No entry",
+        "classification": 1
+    },
+    {
+        "id": 46,
+        "image": "signal/img40.png",
+        "description": "Y-inter section left ",
+        "classification": 2
+    },
+    {
+        "id": 47,
+        "image": "signal/img41.png",
+        "description": "Slippery road",
+        "classification": 2
+    },
+    {
+        "id": 48,
+        "image": "signal/img42.png",
+        "description": "Loose gravel",
+        "classification": 2
+    },
+    {
+        "id": 49,
+        "image": "signal/img43.png",
+        "description": "Cycle crossing ",
+        "classification": 2
+    },
+    {
+        "id": 50,
+        "image": "signal/img44.png",
+        "description": "Possibility of cattle on road",
+        "classification": 2
+    },
+    {
+        "id": 51,
+        "image": "signal/img45.png",
+        "description": "School ahead",
+        "classification": 2
+    },
+    {
+        "id": 52,
+        "image": "signal/img46.png",
+        "description": "Men at work",
+        "classification": 2
+    },
+    {
+        "id": 53,
+        "image": "signal/img47.png",
+        "description": "Falling rocks",
+        "classification": 2
+    },
+    {
+        "id": 54,
+        "image": "signal/img49.png",
+        "description": "Steep ascend",
+        "classification": 2
+    },
+    {
+        "id": 55,
+        "image": "signal/img5.png",
+        "description": "Right hand curve",
+        "classification": 2
+    },
+    {
+        "id": 56,
+        "image": "signal/img50.png",
+        "description": "Steep descend",
+        "classification": 2
+    },
+    {
+        "id": 57,
+        "image": "signal/img51.png",
+        "description": "Road widens ahead",
+        "classification": 2
+    },
+    {
+        "id": 58,
+        "image": "signal/img52.png",
+        "description": "Gap in median",
+        "classification": 2
+    },
+    {
+        "id": 59,
+        "image": "signal/img53.png",
+        "description": "Hump or rough road",
+        "classification": 2
+    },
+    {
+        "id": 60,
+        "image": "signal/img54.png",
+        "description": "Barrier ahead",
+        "classification": 2
+    },
+    {
+        "id": 61,
+        "image": "signal/img55.png",
+        "description": "No thorough side road",
+        "classification": 3
+    },
+    {
+        "id": 62,
+        "image": "signal/img56.png",
+        "description": "Ferry ahead",
+        "classification": 2
+    },
+    {
+        "id": 63,
+        "image": "signal/img57.png",
+        "description": "Parking both sides",
+        "classification": 3
+    },
+    {
+        "id": 64,
+        "image": "signal/img58.png",
+        "description": "Parking lot - scooters and motor cycles",
+        "classification": 3
+    },
+    {
+        "id": 65,
+        "image": "signal/img6.png",
+        "description": "Pedestrian crossing",
+        "classification": 2
+    },
+    {
+        "id": 66,
+        "image": "signal/img63.png",
+        "description": "To turn right",
+        "classification": 4
+    },
+    {
+        "id": 67,
+        "image": "signal/img64.png",
+        "description": "Intends to turn left",
+        "classification": 4
+    },
+    {
+        "id": 68,
+        "image": "signal/img65.png",
+        "description": "Intends to slow down the vehicle",
+        "classification": 4
+    },
+    {
+        "id": 69,
+        "image": "signal/img66.png",
+        "description": "Intends to stop the vehicle",
+        "classification": 4
+    },
+    {
+        "id": 70,
+        "image": "signal/img67.png",
+        "description": "Indicating the car following you to overtake",
+        "classification": 4
+    },
+    {
+        "id": 71,
+        "image": "signal/img69.png",
+        "description": "No parking",
+        "classification": 1
+    },
+    {
+        "id": 72,
+        "image": "signal/img7.png",
+        "description": "Parking on the right allowed",
+        "classification": 3
+    },
+    {
+        "id": 73,
+        "image": "signal/img70.png",
+        "description": "Compulsory turn left",
+        "classification": 1
+    },
+    {
+        "id": 74,
+        "image": "signal/img71.png",
+        "description": "Hospital",
+        "classification": 3
+    },
+    {
+        "id": 75,
+        "image": "signal/img72.png",
+        "description": "Right turn prohibited",
+        "classification": 1
+    },
+    {
+        "id": 76,
+        "image": "signal/img73.png",
+        "description": "Compulsory turn right",
+        "classification": 1
+    },
+    {
+        "id": 77,
+        "image": "signal/img74.png",
+        "description": "Vehicle prohibited in both directions",
+        "classification": 1
+    },
+    {
+        "id": 78,
+        "image": "signal/img75.png",
+        "description": "Side road left",
+        "classification": 2
+    },
+    {
+        "id": 79,
+        "image": "signal/img76.png",
+        "description": "Staggered Intersection",
+        "classification": 2
+    },
+    {
+        "id": 80,
+        "image": "signal/img79.png",
+        "description": "Resting place",
+        "classification": 3
+    },
+    {
+        "id": 81,
+        "image": "signal/img8.png",
+        "description": "U-turn prohibited ",
+        "classification": 1
+    },
+    {
+        "id": 82,
+        "image": "signal/img80.png",
+        "description": "No thorough road",
+        "classification": 3
+    },
+    {
+        "id": 83,
+        "image": "signal/img81.png",
+        "description": "One way",
+        "classification": 1
+    },
+    {
+        "id": 84,
+        "image": "signal/img83.png",
+        "description": "First aid post",
+        "classification": 3
+    },
+    {
+        "id": 85,
+        "image": "signal/img85.png",
+        "description": "Compulsory Turn Right",
+        "classification": 1
+    },
+    {
+        "id": 86,
+        "image": "signal/img86.png",
+        "description": "One way sign",
+        "classification": 1
+    },
+    {
+        "id": 87,
+        "image": "signal/img87.png",
+        "description": "No entry for vehicles having more than 2 meters width",
+        "classification": 1
+    },
+    {
+        "id": 88,
+        "image": "signal/img88.png",
+        "description": "Entry for vehicles having height not exceeding 3.5 meters",
+        "classification": 1
+    },
+    {
+        "id": 89,
+        "image": "signal/img9.png",
+        "description": "Horn prohibited",
+        "classification": 1
+    },
+    {
+        "id": 90,
+        "image": "signal/img90.png",
+        "description": "T-Intersection",
+        "classification": 2
+    },
+    {
+        "id": 91,
+        "image": "signal/img91.png",
+        "description": "To stop vehicles approaching from behind",
+        "classification": 4
+    },
+    {
+        "id": 92,
+        "image": "signal/img92.png",
+        "description": "Request to stop the vehicle coming from behind and front",
+        "classification": 4
+    },
+    {
+        "id": 93,
+        "image": "signal/img93.png",
+        "description": "Request to stop the vehicle coming from front",
+        "classification": 4
+    },
+    {
+        "id": 94,
+        "image": "signal/img98.png",
+        "description": "Compulsory cycle track",
+        "classification": 1
+    },
+    {
+        "id": 95,
+        "image": "signal/img99.png",
+        "description": "Load limit 5T",
+        "classification": 1
+    },
+    {
+        "id": 96,
+        "image": "signal/img202.png",
+        "description": "Trucks Prohibited",
+        "classification": 1
+    },
+    {
+        "id": 97,
+        "image": "signal/img203.png",
+        "description": "Axle weight limit",
+        "classification": 1
+    },
+    {
+        "id": 98,
+        "image": "signal/img204.png",
+        "description": "Level crossing unguarded",
+        "classification": 2
+    },
+    {
+        "id": 99,
+        "image": "signal/img206.png",
+        "description": "Parking lot - Autorikshaws",
+        "classification": 3
+    },
+    {
+        "id": 100,
+        "image": "signal/img207.png",
+        "description": "Parking lot - Taxis",
+        "classification": 3
+    }
+]
