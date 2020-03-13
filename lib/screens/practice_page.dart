@@ -42,36 +42,55 @@ class _PracticePageState extends State<PracticePage> {
   bool shouldScroll;
   int selectedQuestion;
   MobileAdTargetingInfo targetingInfo;
-  String myAdMobAdUnitId = 'ca-app-pub-7846270136949123/5917284668';
-  bool isRewarded = true;
+  InterstitialAd interstitialAd;
+  // String myAdMobAdUnitId = 'ca-app-pub-7846270136949123/5917284668';
+  String adUnitId = 'ca-app-pub-7846270136949123/6596629878';
+  // bool isRewarded = true;
+
+  @override
+  void dispose() {
+    interstitialAd?.dispose();
+    super.dispose();
+  }
 
   @override
   void initState() {
     FirebaseAdMob.instance.initialize(appId: APP_ID);
-    
-    RewardedVideoAd.instance.listener =
-        (RewardedVideoAdEvent event, {String rewardType, int rewardAmount}) {
-      if (event == RewardedVideoAdEvent.rewarded) {
-        isRewarded = true;
-        Future.delayed(const Duration(seconds: 1), () {
-          animateToPage(currentPage + 1);
-        });
-      }
-       if (event == RewardedVideoAdEvent.closed) {
-      RewardedVideoAd.instance
-          .load(adUnitId: myAdMobAdUnitId, targetingInfo: targetingInfo)
-          .catchError((e) => print("error in loading again"))
-          .then((v) => print("Loaded"));
-    }
-    };
     targetingInfo = MobileAdTargetingInfo(
-      keywords: <String>['driving', 'shopping', 'car', 'bike'],
+      keywords: <String>['game', 'shopping', 'education'],
       childDirected: true,
     );
-    RewardedVideoAd.instance
-          .load(adUnitId: myAdMobAdUnitId, targetingInfo: targetingInfo)
-          .catchError((e) => print("error in loading !st time"))
-          .then((v) => print("Loaded"));
+
+    // initInterstitialAd();
+    // myInterstitial.isLoaded()
+    // RewardedVideoAd.instance.listener =
+    //     (RewardedVideoAdEvent event, {String rewardType, int rewardAmount}) {
+    //   if (event == RewardedVideoAdEvent.rewarded) {
+    //     isRewarded = true;
+    //     Future.delayed(const Duration(seconds: 1), () {
+    //       animateToPage(currentPage + 1);
+    //     });
+    //   }
+
+    //    if (event == RewardedVideoAdEvent.closed) {
+    //      isRewarded = true;
+    //      Future.delayed(const Duration(seconds: 1), () {
+    //       animateToPage(currentPage + 1);
+    //     });
+    //   RewardedVideoAd.instance
+    //       .load(adUnitId: myAdMobAdUnitId, targetingInfo: targetingInfo)
+    //       .catchError((e) => print("error in loading again"))
+    //       .then((v) => print("Loaded"));
+    // }
+    // };
+    // targetingInfo = MobileAdTargetingInfo(
+    //   keywords: <String>['driving', 'shopping', 'car', 'bike'],
+    //   childDirected: true,
+    // );
+    // RewardedVideoAd.instance
+    //       .load(adUnitId: myAdMobAdUnitId, targetingInfo: targetingInfo)
+    //       .catchError((e) => print("error in loading !st time"))
+    //       .then((v) => print("Loaded"));
     loadQuestions();
 
     _pageController =
@@ -461,7 +480,7 @@ class _PracticePageState extends State<PracticePage> {
     );
   }
 
-  void answeredCallback() async{
+  void answeredCallback() async {
     Question answeredQuestion;
     if (selectedOption != 0) {
       answeredQuestion = questions[_pageController.page.toInt()];
@@ -489,15 +508,20 @@ class _PracticePageState extends State<PracticePage> {
     }
     if (Exam().answeredQuestions.length > 0 &&
         Exam().answeredQuestions.length % 10 == 0) {
-          isRewarded = false;
-          await RewardedVideoAd.instance.show().catchError((e) => isRewarded = true);
-      
-    }
-    if (isRewarded) {
-      Future.delayed(const Duration(seconds: 1), () {
-        animateToPage(currentPage + 1);
+      InterstitialAd interstitialAd = new InterstitialAd(
+          adUnitId: adUnitId,
+          listener: (MobileAdEvent e) {
+            print("Mobile ad event => $e");
+          });
+      interstitialAd.load().then((val) {
+        interstitialAd.show();
       });
     }
+    // if (isRewarded) {
+    Future.delayed(const Duration(seconds: 1), () {
+      animateToPage(currentPage + 1);
+    });
+    // }
   }
 
   void showSelectLangDialog() {
@@ -523,5 +547,29 @@ class _PracticePageState extends State<PracticePage> {
         currentQuestion = questions[0];
       });
     });
+  }
+
+  initInterstitialAd() {
+    interstitialAd = InterstitialAd(
+        adUnitId: adUnitId,
+        listener: (MobileAdEvent me) {
+          print('========== Interstitial ad mobile ad event =========== $me');
+          if (me == MobileAdEvent.closed) {
+            print('Interstitial closed');
+            interstitialAd.dispose().then((val) {
+              if (val) {
+                loadInterstitialAd();
+              }
+            });
+          } else if (me == MobileAdEvent.failedToLoad) {
+            print('Interstitial failed to load');
+            loadInterstitialAd();
+          }
+        });
+    loadInterstitialAd();
+  }
+
+  loadInterstitialAd() {
+    interstitialAd.load();
   }
 }

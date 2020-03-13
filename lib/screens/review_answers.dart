@@ -2,24 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:riders/models/exam.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 
+const String APP_ID = 'ca-app-pub-7846270136949123~9856529675';
+
 class ReviewAnswers extends StatelessWidget {
   const ReviewAnswers({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    FirebaseAdMob.instance.initialize(appId: APP_ID);
     String adUnitId = 'ca-app-pub-7846270136949123/8451948663';
     MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-      keywords: <String>['flutterio', 'beautiful apps'],
-      contentUrl: 'https://flutter.io',
+      keywords: <String>['games', 'shopping'],
       childDirected: true,
     );
     InterstitialAd myInterstitial = InterstitialAd(
       adUnitId: adUnitId,
       targetingInfo: targetingInfo,
     );
-    myInterstitial
-      ..load()
-      ..show().catchError((e) => print(e));
+    myInterstitial..load();
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      myInterstitial..show();
+    });
+
     return WillPopScope(
       child: Scaffold(
         appBar: AppBar(

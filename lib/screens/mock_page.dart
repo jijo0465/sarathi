@@ -45,17 +45,19 @@ class _MockPageState extends State<MockPage>
   void initState() {
     currentPage = 0;
     currentQuestion = Question();
-      rootBundle.loadString('assets/json/questions_${widget.language}.json').then((string) {
-        questionString = string;
-        Iterable l = json.decode(questionString);
-        l.forEach((f) {
-          questions.add(Question.fromJson(f));
-        });
-        questions = Question.getSuffledTwenty(questions);
-        setState(() {
-          isLoading = false;
-        });
+    rootBundle
+        .loadString('assets/json/questions_${widget.language}.json')
+        .then((string) {
+      questionString = string;
+      Iterable l = json.decode(questionString);
+      l.forEach((f) {
+        questions.add(Question.fromJson(f));
       });
+      questions = Question.getSuffledTwenty(questions);
+      setState(() {
+        isLoading = false;
+      });
+    });
     controller = AnimationController(
         duration: const Duration(milliseconds: 500), vsync: this);
     CountDownTimer.onTimeOut = timedOut;
@@ -111,11 +113,15 @@ class _MockPageState extends State<MockPage>
                               SizedBox(
                                 width: 12,
                               ),
-                              Text(
-                                'Correct Answers :  ${Exam().correctAnswers.toString()}',
-                                style: TextStyle(fontSize: 13),
+                              Expanded(
+                                flex: 4,
+                                child: Text(
+                                  'Correct Answers :  ${Exam().correctAnswers.toString()}',
+                                  style: TextStyle(fontSize: 13),
+                                ),
                               ),
                               Expanded(
+                                flex: 2,
                                 child: Container(
                                   height: 70,
                                   width: 70,
@@ -124,9 +130,15 @@ class _MockPageState extends State<MockPage>
                                   ),
                                 ),
                               ),
-                              Text(
-                                  'Remaining :  ${(Exam().remainingQuestions).toString()}',
-                                  style: TextStyle(fontSize: 13)),
+                              Expanded(
+                                flex: 4,
+                                child: Container(
+                                  alignment: Alignment.centerRight,
+                                  child: Text(
+                                      'Remaining :  ${(Exam().remainingQuestions).toString()}',
+                                      style: TextStyle(fontSize: 13)),
+                                ),
+                              ),
                               SizedBox(
                                 width: 12,
                               )
@@ -369,7 +381,6 @@ class _MockPageState extends State<MockPage>
                                           ],
                                         );
                                       });
-                                  
                                 },
                               )
                             ],
@@ -421,14 +432,18 @@ class _MockPageState extends State<MockPage>
                     title: Text('Are you sure?'),
                     content: Container(
                         padding: EdgeInsets.only(top: 4),
-                        child: Text('Going back will loose your current progress.')),
+                        child: Text(
+                            'Going back will loose your current progress.')),
                     actions: <Widget>[
                       FlatButton(
                         onPressed: () => Navigator.of(context).pop(false),
                         child: Text('Cancel'),
                       ),
                       FlatButton(
-                        onPressed: () => Navigator.of(context).pop(true),
+                        onPressed: () {
+                          Navigator.of(context).pop(true);
+                          Exam().clearData();
+                        },
                         child: Text('Yes'),
                       ),
                     ],

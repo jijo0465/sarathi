@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "541418148384",
+    "firebase_url": "https://sarathi-83fe7.firebaseio.com",
+    "project_id": "sarathi-83fe7",
+    "storage_bucket": "sarathi-83fe7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541418148384:android:eeaad60fceb9afafb1e245",
+        "android_client_info": {
+          "package_name": "com.siphlo.sarathi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541418148384-74soi6a9494s29i7cngm57dql50j13ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxzXiWLe_PJVl3z-3v5zmrw_uzfU5rtS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541418148384-74soi6a9494s29i7cngm57dql50j13ar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
